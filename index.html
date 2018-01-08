@@ -14,6 +14,10 @@ img {
   display: table;
   margin: auto;
 }
+    var chart = new cryptowatch.Embed('bitfinex', 'btcusd', {
+  width: 800,
+  height: 500
+});
   </style>
 <title>BITCOIN</title>
 <link href="/style.css" rel="stylesheet" type="text/css">
@@ -27,4 +31,6 @@ img {
   var chart = new cryptowatch.Embed('bitfinex', 'btcusd');
 
 chart.mount('#chart-container');
+  
+ 
 </html>
