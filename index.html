@@ -1,59 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>BITCOIN=RIP</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel='shortcut icon' type='image/x-icon' href='https://bitcoin.org/img/icons/opengraph.png' />
   <style>
     * {
-    margin: 0;
-      padding: 0;
-    }
+  margin: 0;
+  padding: 0;
+}
 body {
-    background-color: black;
-    font-family: Arial;
-    color: white;
+  background-color: black;
+  font-family: Arial;
+  color: white;
+}
+.container {
+  width: 90%; 
+  margin: auto;
 }
 h1 {
-    display: inline;
+  display: inline;
 }
 img {
-    width: 100px;
+  width: 100px;
+  height: 100px;
   margin: 10px;
+  transition: opacity 1s, width 1s, height 1s;
+}
+img:hover {
+	opacity: 0.5;
+	height: 125px;
+	width: 125px;
 }
 p {
-    margin: 50px;
-  text-align: center;
+  margin: 50px;
 }
-    .header {
-      height: 100px;
-      margin: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-     width: 700px; 
-      margin: auto;
-    }
-    .alma {
-     text-align: right;
-      margin: 5px 0;
-    }
+.header {
+  height: 100px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+}
+.btc {
+  width: 49%;
+  overflow: hidden;
+  display: inline-block;
+  height: 650px;
+}
+.iota {
+  width: 49%;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  height: 650px;
+}
+.btcchart {
+	position: absolute;
+	left: 8%;
+}
+.iotachart {
+	position: absolute;
+	left: 5%;
+}
+.alma {
+	position: absolute;
+	right: 125px;
+	top: 575px;
+  margin: 5px 5%;
+  display: inline-block;
+}
+@media only screen and (max-width: 1500px) {
+    .btc, .iota {
+		display: table;
+		width: 98%;
+		text-align: center;
+		align-items: center;
+	}
+	.header {
+		justify-content: center;
+		width: 95%;
+	}
+	.alma {
+		position: absolute;
+		top: 1175px;
+		right: 225px;
+		text-align: right;
+	}
+	.iota {
+        position: relative;
+		top: -50px;
+	}
+	.btcchart {
+        position: relative;
+		left: 0px;
+	}
+	.iotachart {
+position: relative;
+left: 0px;
+	}
+}
   </style>
-  <title>BITCOIN</title>
-  <link href="/style.css" rel="stylesheet" type="text/css">
-  <link rel='shortcut icon' type='image/x-icon' href='https://bitcoin.org/img/icons/opengraph.png' />
 </head>
 <body>
   <div class="container">
+    <div class="btc">
   <div class="header">
     <h1>BUY BITCOIN=RIP $$$</h1>
-    <img src="https://bitcoin.org/img/icons/opengraph.png">
+    <a href="https://bitcoin.org" target="_blank"><img src="https://bitcoin.org/img/icons/opengraph.png"></a>
   </div>
   <p>If you do choose to ignore my advice, feel free to watch your money disappear below</p>
+  <div class="btcchart">
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
     new TradingView.widget({
-    "width": 735,
-    "height": 452,
+    "width": 551.25,
+    "height": 339,
     "symbol": "COINBASE:BTCUSD",
     "interval": "1",
     "timezone": "Etc/UTC",
@@ -66,7 +127,37 @@ p {
     "hideideas": true
   });
   </script>
-  <p class="alma">Site by Almatrass</p>
+  </div>
+  </div>
+    <div class="iota">
+	<div class="header">
+	  <h1>BUY IOTA=$$$</h1>
+	  <a href="https://iota.org" target="_blank"><img src="https://iotasupport.com/images/headerlogo.png"></a>
+	</div>
+	<p>If you choose to take my advice, feel free to watch the free ez $$$ below</p>
+	<div class="iotachart">
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 551.25,
+  "height": 339,
+  "symbol": "BITFINEX:IOTUSD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "Dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "hideideas": true
+});
+</script>
+</div>
+  </div>
+  <div class="alma">
+  <p>Site by Almatrass</p>
+  </div>
   </div>
 </body>
 </html>
