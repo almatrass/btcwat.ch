@@ -5,156 +5,84 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel='shortcut icon' type='image/x-icon' href='https://bitcoin.org/img/icons/opengraph.png' />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: black;
-  font-family: Arial;
-  color: white;
-}
-h1 {
-  display: inline;
-}
-img {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  transition: opacity 1s, width 1s, height 1s;
-}
-img:hover {
-	opacity: 0.5;
-	height: 125px;
-	width: 125px;
-}
-p {
-  margin: 50px;
-}
-.header {
-  height: 100px;
-  margin: 50px;
-  display: flex;
-  align-items: center;
-}
-.btc {
-  width: 49%;
-  overflow: hidden;
-  display: inline-block;
-  height: 650px;
-}
-.iota {
-  width: 49%;
-  overflow: hidden;
-  display: inline-block;
-  position: absolute;
-  height: 650px;
-}
-.btcchart {
-	position: absolute;
-	left: 8%;
-}
-.iotachart {
-	position: absolute;
-	left: 5%;
-}
-.alma {
-	position: absolute;
-	right: 125px;
-	top: 575px;
-  margin: 5px 5%;
-  display: inline-block;
-}
-@media only screen and (max-width: 1500px) {
-    .btc, .iota {
-		display: table;
-		width: 98%;
-		text-align: center;
-		align-items: center;
+	<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+	<style>
+	body {
+		background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=413d29f6051e59b9d2317d8d827c8279&auto=format&fit=crop&w=1070&q=80");	
 	}
-	.header {
-		justify-content: center;
-		width: 95%;
+	.container {
+		margin-top: 20px;
+		color: white;
+	}
+	img {
+		width: 100px;
+		height: 100px;
+		transition: opacity 1s;
+	}
+	img:hover {
+		opacity: 0.5;
+	}
+	h1 {
+		display: inline;
 	}
 	.alma {
-		position: absolute;
-		top: 1175px;
-		right: 225px;
-		text-align: right;
+	  padding-top: 10px;
 	}
-	.iota {
-        position: relative;
-		top: -50px;
-	}
-	.btcchart {
-        position: relative;
-		left: 0px;
-	}
-	.iotachart {
-position: relative;
-left: 0px;
-	}
-}
-  </style>
+	</style>
 </head>
 <body>
   <div class="container">
-    <div class="btc">
-  <div class="header">
+	<div class="row">
+	<div class="col-lg-6">
     <h1>BUY BITCOIN=RIP $$$</h1>
     <a href="https://bitcoin.org" target="_blank"><img src="https://bitcoin.org/img/icons/opengraph.png"></a>
-  </div>
-  <p>If you do choose to ignore my advice, feel free to watch your money disappear below</p>
-  <div class="btcchart">
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-    new TradingView.widget({
-    "width": 551.25,
-    "height": 339,
-    "symbol": "COINBASE:BTCUSD",
-    "interval": "1",
-    "timezone": "Etc/UTC",
-    "theme": "Dark",
-    "style": "1",
-    "locale": "en",
-    "toolbar_bg": "#f1f3f6",
-    "enable_publishing": false,
-    "allow_symbol_change": true,
-    "hideideas": true
-  });
-  </script>
-  </div>
-  </div>
-    <div class="iota">
-	<div class="header">
+  <p>If you choose to ignore my advice, watch your $$$ disappear below</p>
+	<div>
+		<script type="text/javascript">
+			new TradingView.widget({
+			"width": 551.25,
+			"height": 339,
+			"symbol": "COINBASE:BTCUSD",
+			"interval": "1",
+			"timezone": "Etc/UTC",
+			"theme": "Dark",
+			"style": "1",
+			"locale": "en",
+			"toolbar_bg": "#f1f3f6",
+			"enable_publishing": false,
+			"allow_symbol_change": true,
+			"hideideas": true
+		});
+		</script>
+		</div>
+		</div>
+		<div class="col-lg-6">
 	  <h1>BUY IOTA=$$$</h1>
 	  <a href="https://iota.org" target="_blank"><img src="https://iotasupport.com/images/headerlogo.png"></a>
-	</div>
-	<p>If you choose to take my advice, feel free to watch the free ez $$$ below</p>
-	<div class="iotachart">
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "width": 551.25,
-  "height": 339,
-  "symbol": "BITFINEX:IOTUSD",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "Dark",
-  "style": "1",
-  "locale": "en",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "allow_symbol_change": true,
-  "hideideas": true
-});
-</script>
-</div>
-  </div>
-  <div class="alma">
-  <p>Site by Almatrass</p>
-  </div>
+	  <p>If you choose to take my advice, feel free to watch the free ez $$$ below</p>
+			<div>
+				<script type="text/javascript">
+				new TradingView.widget({
+					"width": 551.25,
+					"height": 339,
+					"symbol": "BITFINEX:IOTUSD",
+					"interval": "1",
+					"timezone": "Etc/UTC",
+					"theme": "Dark",
+					"style": "1",
+					"locale": "en",
+					"toolbar_bg": "#f1f3f6",
+					"enable_publishing": false,
+					"allow_symbol_change": true,
+					"hideideas": true
+				});
+				</script>
+			</div>
+			</div>
+			<div class="col-lg-12 alma">
+		<p>Site by Almatrass</p>
+		</div>
+		</div>
   </div>
 </body>
 </html>
